@@ -1,0 +1,130 @@
+@font-face {
+    font-family: MontserratBold;
+    src: url("fonts/MontserratSemiBold.ttf");
+}
+
+* {
+    font-family: MontserratBold, sans-serif;
+}
+
+body {
+    background-color: rgb(36, 164, 164);
+    animation-name: bodyBackgroundAnimation;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.info-container {
+    color: white;
+    text-align: center;
+}
+
+.phrase-box {
+    border-radius: 50px 50px 0 0;
+    text-align: right;
+    padding: 20px 20px 20px 0;
+    height: 3%;
+}
+
+.container {
+    background-color: #FFB2FF;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    border: 5px solid #78007A;
+    border-radius: 50px;
+    box-shadow: 0 0 40px #78007A;
+}
+
+.screen {
+    width: 98.3%;
+    height: 20%;
+    background-color: transparent;
+    border-radius: 45px 45px 0 0;
+    border: 0 solid #000;
+    color: #78007A;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.key-container {
+    width: 99.8%;
+    height: 70%;
+    background-color: white;
+    border-radius: 45px;
+    box-shadow: 0 0 20px #78007A;
+    border: 0 solid transparent;
+    margin: auto;
+}
+
+#divide {
+    background-image: url('images/divide.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    border-collapse: collapse;
+}
+
+table input {
+    background-color: transparent;
+    border: 0 solid transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: larger;
+    cursor: pointer;
+    margin: 0;
+}
+
+table input:hover {
+    background-color: #e5e5e5;
+}
+
+table td {
+    width: 25%;
+    padding: 0;
+}
+
+.num {
+    color: black;
+}
+
+.op {
+    color: #78007A;
+}
+
+#clear {
+    border-radius: 45px 0 0 0;
+}
+
+#ce {
+    border-radius: 0 45px 0 0;
+}
+
+.num:hover {
+    animation: btnRotate 200ms ease-in-out 1;
+}
+
+#equal {
+    border-radius: 0 0 45px 0;
+    background-color: #78007A;
+    color: white;
+    width: 101%;
+}
+
+#equal:hover {
+    background-color: #670069;
+}
+
+#percent {
+    border-radius: 0 0 0 45px;
+}

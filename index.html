@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mhm-simple-calculator</title>
+    <link rel="stylesheet" href="keyframes.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="info-container">
+        <h1>MHM Simple Calculator</h1>
+        <p>Mahde by ❤️ by Mahdi Hampayi Milany</p>
+    </div><br><br>
+
+
+    <div class="container">
+        <div class="phrase-box">
+            <span id="phrase"></span>
+        </div>
+        <input id="displayScreen" class="screen" type="text" value="0" readonly>
+        <div class="key-container">
+            <table>
+                <tr>
+                    <td><input id="clear" class="op" type="button" onclick="clearAll()" value="clear"></td>
+                    <td><input id="divide" class="op" type="button" onclick="operator(' ')" value=""></td>
+                    <td><input class="op" type="button" onclick="operator('x')" value="x"></td>
+                    <td><input id="ce" class="op" type="button" onclick="ce()" value="ce"></td>
+                </tr>
+                <tr>
+                    <td><input class="num" type="button" onclick="dgWrite('7')" value="7"></td>
+                    <td><input class="num" type="button" onclick="dgWrite('8')" value="8"></td>
+                    <td><input class="num" type="button" onclick="dgWrite('9')" value="9"></td>
+                    <td><input class="op" type="button" onclick="operator('-')" value="-"></td>
+                </tr>
+                <tr>
+                    <td><input class="num" type="button" onclick="dgWrite('4')" value="4"></td>
+                    <td><input class="num" type="button" onclick="dgWrite('5')" value="5"></td>
+                    <td><input class="num" type="button" onclick="dgWrite('6')" value="6"></td>
+                    <td><input class="op" type="button" onclick="operator('+')" value="+"></td>
+                </tr>
+                <tr>
+                    <td><input class="num" type="button" onclick="dgWrite('1')" value="1"></td>
+                    <td><input class="num" type="button" onclick="dgWrite('2')" value="2"></td>
+                    <td><input class="num" type="button" onclick="dgWrite('3')" value="3"></td>
+                    <td rowspan="2"><input id="equal" onclick="equal()" class="op" type="button" value="="></td>
+                </tr>
+                <tr>
+                    <td><input id="percent" class="num" type="button" onclick="percent()" value="%"></td>
+                    <td><input class="num" type="button" onclick="dgWrite('0')" value="0"></td>
+                    <td><input class="num" type="button" onclick="dot()" value="."></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
